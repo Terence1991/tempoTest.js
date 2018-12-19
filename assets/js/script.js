@@ -1,3 +1,6 @@
+if (!this.$) {
+	var $ = require('jquery');
+}
 // Globals variables
 var cart = {total: 0};
 	// 	An array containing objects with information about the products.
@@ -421,8 +424,6 @@ function createQueryHash(filters){
 	}
 
 }
-
-var $ = require('jquery');
 
 module.exports = {
 	addToCart,
